@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login de administrador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Panel de administración</h1></header>
+  <main>
+    <form id="adminLogin">
+      <input type="text" name="user" placeholder="Usuario" required>
+      <input type="password" name="pass" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+  <footer><p>© Financiera México</p></footer>
+  <script>
+    document.getElementById('adminLogin').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const u = this.user.value, p = this.pass.value;
+      if (u === "admin" && p === "123456") {
+        location.href = "dashboard.html";
+      } else {
+        alert("Credenciales incorrectas");
+      }
+    });
+  </script>
+</body>
+</html>

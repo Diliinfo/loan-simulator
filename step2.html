@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>贷款信息</title>
+  <title>Préstamo e identificación</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h2>贷款信息</h2>
-  <form id="step2Form">
-    <input type="number" name="amount" placeholder="贷款金额" required><br>
-    <input type="text" name="purpose" placeholder="贷款用途" required><br>
-    <button type="submit">下一步</button>
-  </form>
+  <header><h1>Datos del préstamo e INE</h1></header>
+  <main>
+    <form id="step2Form">
+      <input type="number" name="amount" placeholder="Monto solicitado (MXN)" required>
+      <input type="text" name="purpose" placeholder="Motivo del préstamo" required>
+      <label>Sube tu INE - Frente</label>
+      <input type="file" name="id_front" accept="image/*" required>
+      <label>Sube tu INE - Reverso</label>
+      <input type="file" name="id_back" accept="image/*" required>
+      <div id="preview"></div>
+      <button type="submit">Siguiente</button>
+    </form>
+  </main>
+  <footer><p>© Financiera México</p></footer>
   <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>收入与职业信息</title>
+  <title>Datos laborales</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h2>收入与职业</h2>
-  <form id="step1Form">
-    <input type="text" name="income" placeholder="月收入" required><br>
-    <input type="text" name="job" placeholder="职业" required><br>
-    <button type="submit">下一步</button>
-  </form>
+  <header><h1>Información de empleo</h1></header>
+  <main>
+    <form id="step1Form">
+      <input type="text" name="job" placeholder="Ocupación" required>
+      <input type="number" name="income" placeholder="Ingreso mensual (MXN)" required>
+      <button type="submit">Siguiente</button>
+    </form>
+  </main>
+  <footer><p>© Financiera México</p></footer>
   <script src="scripts.js"></script>
 </body>
 </html>

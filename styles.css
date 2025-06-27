@@ -1,22 +1,48 @@
 body {
-  font-family: sans-serif;
-  margin: 40px;
-  background-color: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
 }
-h1, h2 {
-  color: #333;
-}
-input {
-  padding: 10px;
-  margin: 5px 0;
-  width: 300px;
-}
-button, .button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: #0077ff;
+header, footer {
+  background: #003366;
   color: white;
-  border: none;
-  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+}
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
   text-decoration: none;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.hero {
+  padding: 40px;
+  background: #e3f2fd;
+  text-align: center;
+  border-radius: 8px;
 }

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Solicitudes recibidas</h1></header>
+  <main>
+    <pre id="adminData">Cargando datos...</pre>
+  </main>
+  <footer><p>© Financiera México</p></footer>
+  <script>
+    const data = localStorage.getItem("loanApp");
+    document.getElementById("adminData").textContent = data || "Sin datos aún";
+  </script>
+</body>
+</html>
