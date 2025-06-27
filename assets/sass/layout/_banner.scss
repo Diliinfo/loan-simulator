@@ -24,7 +24,7 @@
 		position: relative;
 		top: -3.25em;
 
-		&:after {
+		/*&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.25s');
 			@include vendor('pointer-events', 'none');
@@ -38,7 +38,7 @@
 			top: 0;
 			width: 100%;
 			z-index: 1;
-		}
+		}*/
 
 		h1 {
 			font-size: 3.25em;
