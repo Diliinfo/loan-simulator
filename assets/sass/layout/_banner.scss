@@ -26,14 +26,14 @@
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
-			@include vendor('transition-delay', '0.5s');
+			@include vendor('transition-delay', '0.25s');
 			@include vendor('pointer-events', 'none');
 			background-color: _palette(bg);
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.45;
+			opacity: 0.15;
 			position: absolute;
 			top: 0;
 			width: 100%;
