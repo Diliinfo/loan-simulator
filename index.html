@@ -2,27 +2,33 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Solicita tu préstamo</title>
+  <title>Plataforma de Préstamos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Plataforma de Préstamos</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="register.html">Solicitar</a>
-      <a href="admin.html">Admin</a>
-    </nav>
+  <header class="bg-primary text-white p-3">
+    <div class="container d-flex justify-content-between">
+      <h1 class="h4">Préstamos MX</h1>
+      <nav>
+        <a href="index.html" class="text-white me-3">Inicio</a>
+        <a href="register.html" class="text-white me-3">Solicitar</a>
+        <a href="admin.html" class="text-white">Admin</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Bienvenido</h2>
-    <p>Solicita tu préstamo en línea de manera rápida y segura.</p>
-    <a class="btn" href="register.html">Comenzar</a>
-  </main>
+  <section class="hero bg-light text-center py-5">
+    <div class="container">
+      <h2 class="mb-3">Solicita tu préstamo hoy mismo</h2>
+      <p class="mb-4">Proceso fácil, rápido y 100% en línea.</p>
+      <a href="register.html" class="btn btn-primary btn-lg">Comenzar solicitud</a>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Plataforma de Préstamos. Todos los derechos reservados.</p>
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    &copy; 2025 Plataforma de Préstamos. Todos los derechos reservados.
   </footer>
 </body>
 </html>

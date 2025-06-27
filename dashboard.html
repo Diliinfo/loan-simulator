@@ -1,18 +1,1 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Panel de control</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header><h1>Solicitudes Recibidas (Demo)</h1></header>
-  <main>
-    <pre id="adminData">Simulación de datos en localStorage</pre>
-  </main>
-  <script>
-    const data = localStorage.getItem("loanApp");
-    document.getElementById("adminData").innerText = data || "No hay datos.";
-  </script>
-</body>
-</html>
+<!DOCTYPE html><html lang='es'><head><meta charset='UTF-8'><title>Dashboard</title><link rel='stylesheet' href='styles.css'></head><body><main class='container py-5'><h2>Solicitudes Recibidas</h2><pre id='adminData'>Simulación de datos aquí...</pre><script>document.getElementById('adminData').innerText = localStorage.getItem('loanApp') || 'No hay datos aún.';</script></main></body></html>
