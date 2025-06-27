@@ -2,24 +2,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Préstamo e identificación</title>
+  <title>Información del préstamo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header><h1>Datos del préstamo e INE</h1></header>
+  <header><h1>Préstamo</h1></header>
   <main>
     <form id="step2Form">
-      <input type="number" name="amount" placeholder="Monto solicitado (MXN)" required>
+      <input type="number" name="amount" placeholder="Cantidad solicitada (MXN)" required>
       <input type="text" name="purpose" placeholder="Motivo del préstamo" required>
-      <label>Sube tu INE - Frente</label>
-      <input type="file" name="id_front" accept="image/*" required>
-      <label>Sube tu INE - Reverso</label>
-      <input type="file" name="id_back" accept="image/*" required>
-      <div id="preview"></div>
-      <button type="submit">Siguiente</button>
+      <label>INE - Frente</label>
+      <input type="file" id="ineFront" accept="image/*">
+      <label>INE - Reverso</label>
+      <input type="file" id="ineBack" accept="image/*">
+      <div id="inePreview"></div>
+      <button type="submit">Revisar</button>
     </form>
   </main>
-  <footer><p>© Financiera México</p></footer>
+  <footer></footer>
   <script src="scripts.js"></script>
 </body>
 </html>

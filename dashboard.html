@@ -2,18 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Panel</title>
+  <title>Panel de control</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header><h1>Solicitudes recibidas</h1></header>
+  <header><h1>Solicitudes Recibidas (Demo)</h1></header>
   <main>
-    <pre id="adminData">Cargando datos...</pre>
+    <pre id="adminData">Simulación de datos en localStorage</pre>
   </main>
-  <footer><p>© Financiera México</p></footer>
   <script>
     const data = localStorage.getItem("loanApp");
-    document.getElementById("adminData").textContent = data || "Sin datos aún";
+    document.getElementById("adminData").innerText = data || "No hay datos.";
   </script>
 </body>
 </html>
