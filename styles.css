@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  margin: 40px;
+  background-color: #f7f7f7;
+}
+h1, h2 {
+  color: #333;
+}
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 300px;
+}
+button, .button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
